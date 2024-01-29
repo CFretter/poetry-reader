@@ -2,6 +2,19 @@ document
   .getElementById("startRecording")
   .addEventListener("click", initFunction);
 
+var facts = [`this is a poem bout a poetic bird<br>
+His father was an elephant<br>
+Його батько був слон
+`, 
+             `Fact 2`, 
+             `There once was a cat that didn't like milk
+so it drank tea instead`];
+
+!function newFact() {
+  const randomFact = Math.floor(Math.random() * facts.length);
+  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+}();
+
 let isRecording = document.getElementById("isRecording");
 
 function initFunction() {
@@ -56,6 +69,6 @@ function initFunction() {
   // Stoping handler
   document.getElementById("stopRecording").addEventListener("click", (e) => {
     rec.stop();
-    isRecording.textContent = "Click play button to start listening";
+    isRecording.textContent = "Click play to listen to your ukrainian poem";
   });
 }
