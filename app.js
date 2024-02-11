@@ -1,18 +1,25 @@
 document
   .getElementById("startRecording")
   .addEventListener("click", initFunction);
+document
+  .getElementById("newFactB")
+  .addEventListener("click", newFact);
 
-var facts = [`this is a poem bout a poetic bird<br>
-His father was an elephant<br>
-Його батько був слон
-`, 
-             `Fact 2`, 
-             `There once was a cat that didn't like milk
-so it drank tea instead`];
+var facts = [`— Так багато на світі горя,<br>
+люди, будьте взаємно красивими! "   <br>     
+Ліна Костенко<br>
+The author Lina Kostenko encourages people to be mutually respectful as there is already too much grief in this world<br>
+— Tak bahato na sviti horia,<br>
+liudy, budte vzaiemno krasyvymy!`, 
+             `Fact 2`];
 
-!function newFact() {
+function newFact() {
   const randomFact = Math.floor(Math.random() * facts.length);
   document.getElementById('factDisplay').innerHTML = facts[randomFact];
+}
+
+!function newFactI() {
+newFact()
 }();
 
 let isRecording = document.getElementById("isRecording");
@@ -69,6 +76,6 @@ function initFunction() {
   // Stoping handler
   document.getElementById("stopRecording").addEventListener("click", (e) => {
     rec.stop();
-    isRecording.textContent = "Click play to listen to your ukrainian poem";
+    isRecording.textContent = "Click PLAY to listen to the way you sound in Ukrainian";
   });
 }
