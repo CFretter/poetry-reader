@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="preconnect" href="https://fonts.macpaw.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.macpaw.com/css?family=FixelVariable">
+<link rel="stylesheet" href="https://fonts.macpaw.com/css?family=FixelDisplay:400">
+    
     <title>Hear yourself in Ukrainian</title>
     <style>
         * {
@@ -14,7 +19,8 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: FixelDisplay;
+            font-weight:500;
             text-align: center;
         }
 
@@ -36,13 +42,16 @@
     height: 100%;
 }
 
-#left {
+#tleft {
     margin-right: 10px;
      width: 40%; 
 }
 
-#right {
+#tright {
      width: 55%;
+}
+        #center {
+     width: 90%;
 }
             
 }
@@ -54,8 +63,8 @@
     <div id="content">
             <div id="left" style="width: 40%; float:left">
                 <div class="centered">
-                    <p><strong>Hear yourself in Ukrainian</strong></p>
-                    <img src="kulana.jpg" alt="kulana" width="85%">
+                    <p style="float: center"><strong>Hear yourself in Ukrainian</strong></p>
+                    <img src="kulana.jpg" alt="kulana" width="75%">
                 </div> 
             </div>
             <div id="right" float:right">
@@ -72,22 +81,29 @@
                 <br style="clear:both;"/>
             </div>
             <br style="clear:both;"/>
-        </div>
-    <div style="text-align: center;">
+        
+    <div id="center" style="text-align: center;">
     <button id="newFactB">Generate another passage</button>
     <br>  <br>
-    <div style="border: 2px solid black">
+    <div class="centered" style="  margin-left: 5%;padding-left: 50px;padding-right: 50px;padding-top: 20px;padding-bottom: 20px; width:95%; border: 2px solid black;">
    <p><strong> Passage in Ukrainian</strong>
-    <div id="factDisplay"></div>
+    <div id="factDisplay0"></div>
+      <s>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</s><br />
+                      <p><strong> Explanation of the passage</strong>
+    <div style="text-align:justify" id="factDisplay1"></div>
+        <s>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</s><br />
+                    <p><strong>Transliteration to read out loud</strong>
+    <div id="factDisplay2"></div>
+        
+        
     </div>
       <br>  <br>
 
 <br>
-
-Please press record and read out this text
+ <p><strong> Please press record and read out this text</strong>
         <br>
 Click PLAY to listen to the way you sound in Ukrainian
-
+<br>
 <br>
    
     <button id="startRecording">Record</button>
@@ -103,11 +119,11 @@ Click PLAY to listen to the way you sound in Ukrainian
 
 <br>
 
-Do not stop at one passage, repeat the reading again, may Ukrainian poetry cherish you.
+Do not stop at one passage, repeat the reading,<br> may Ukrainian poetry cherish you.
 <br><br>
 @ kulana.svitlynych @ kulana.svitlynych @ kulana.svitlynych @ kulana.svitlynych 
 
-</div></div>
+</div></div></div>
 </body>
 
 

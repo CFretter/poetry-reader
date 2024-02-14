@@ -5,25 +5,25 @@ document
   .getElementById("newFactB")
   .addEventListener("click", newFact);
 
-var facts = [
+var facts = [[
 `— Так багато на світі горя,<br>
 люди, будьте взаємно красивими! "<br>     
-Ліна Костенко<br>
-The author Lina Kostenko encourages people to be mutually respectful as there is already too much grief in this world<br>
-— Tak bahato na sviti horia,<br>
-liudy, budte vzaiemno krasyvymy!`
+Ліна Костенко<br>`,
+`The author Lina Kostenko encourages people to be mutually respectful as there is already too much grief in this world`,
+`— Tak bahato na sviti horia,<br>
+liudy, budte vzaiemno krasyvymy!`]
 , 
-`"Кожне слово пахне,<br>
-Мов листочок м’яти."<br> 
-The author Dmytro Pavlychko  compares the smell of the word to the one of the mint leaf<br>
-"Kozhne slovo pakhne,<br>
-Mov lystochok miaty."
-`,  
-             `Fact 2`];
+[`"Кожне слово пахне,<br>
+Мов листочок м’яти."<br>`,
+`The author Dmytro Pavlychko  compares the smell of the word to the one of the mint leaf`,
+`"Kozhne slovo pakhne,<br>
+Mov lystochok miaty."`]];
 
 function newFact() {
   const randomFact = Math.floor(Math.random() * facts.length);
-  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+  document.getElementById('factDisplay0').innerHTML = facts[randomFact][0];
+document.getElementById('factDisplay1').innerHTML = facts[randomFact][1];
+document.getElementById('factDisplay2').innerHTML = facts[randomFact][2];
 }
 
 !function newFactI() {
