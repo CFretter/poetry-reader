@@ -29,8 +29,8 @@
             cursor: pointer;
         }
   
-        #content {
-   width: 800px;
+#content {
+   width: 600px;
    height: 450px;
    padding: 10px;
 }
@@ -44,26 +44,42 @@
 
 #tleft {
     margin-right: 10px;
-     width: 40%; 
+     width: 48%; 
 }
 
 #tright {
      width: 55%;
 }
-        #center {
+#center {
      width: 90%;
 }
-            
+
+#scale-div {
+        transform-origin: top left;
+    }
+    @media only screen and (max-width: 360px) {
+    #scale-div {
+        transform: scale(0.5);
+    }
 }
+@media only screen and (max-width: 480px)and (min-width: 360px) {
+    #scale-div {
+        transform: scale(0.7);
+    }
+}
+
+            
+
 
     </style>
 </head>
 
 <body >
+    <div id="scale-div" >
     <div id="content">
-            <div id="left" style="width: 48%; float:left">
+            <div id="tleft" style="float:left">
                 <div class="centered">
-                    <img src="kulana.jpg" alt="kulana" width="75%">
+                    <img src="kulana.jpg" alt="kulana" width="85%">
                 </div> 
             </div>
             <div id="right" float:right">
@@ -123,7 +139,7 @@ Do not stop at one passage, repeat the reading,<br> may Ukrainian poetry cherish
 <br><br>
 @ kulana.svitlynych @ kulana.svitlynych @ kulana.svitlynych @ kulana.svitlynych 
 
-</div></div></div>
+</div></div></div></div>
 </body>
 
 
