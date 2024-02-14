@@ -5,12 +5,20 @@ document
   .getElementById("newFactB")
   .addEventListener("click", newFact);
 
-var facts = [`— Так багато на світі горя,<br>
-люди, будьте взаємно красивими! "   <br>     
+var facts = [
+`— Так багато на світі горя,<br>
+люди, будьте взаємно красивими! "<br>     
 Ліна Костенко<br>
 The author Lina Kostenko encourages people to be mutually respectful as there is already too much grief in this world<br>
 — Tak bahato na sviti horia,<br>
-liudy, budte vzaiemno krasyvymy!`, 
+liudy, budte vzaiemno krasyvymy!`
+, 
+`"Кожне слово пахне,<br>
+Мов листочок м’яти."<br> 
+The author Dmytro Pavlychko  compares the smell of the word to the one of the mint leaf<br>
+"Kozhne slovo pakhne,<br>
+Mov lystochok miaty."
+`,  
              `Fact 2`];
 
 function newFact() {

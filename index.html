@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice recorder</title>
+    <title>Hear yourself in Ukrainian</title>
     <style>
         * {
             margin: 0p;
@@ -22,30 +22,72 @@
             padding: 7px 20px;
             cursor: pointer;
         }
+  
+        #content {
+   width: 800px;
+   height: 500px;
+   padding: 20px;
+}
+
+#left, #right {
+    display: inline-block;
+    box-sizing: border-box;
+     width: 40%;
+    height: 100%;
+}
+
+#left {
+    margin-right: 10px;
+     width: 40%; 
+}
+
+#right {
+     width: 55%;
+}
+            
+}
+
     </style>
 </head>
 
 <body >
-    <img src="kulana.jpg" alt="kulana" width="500">
-    <div> The author, the artist Kulana Svitlynych, creates a platform where one can physically experience the state of inspiration by the Ukrainian language and identity.
-
-<br><br>
-Ineractive installation
-<br><br>
-<h2>Hear yourself in Ukrainian</h2><br>
-Despite the difficulties, not only the language, but also the cultural heritage has been preserved.<br> 
-Today, we can feel new about ourselves through Ukrainian poetry.
-<br><br>
-Here is a passage from a poem in Ukrainian with explanation and transliteration to help you read it out loud.
-
-<br><br>
- <br>  <br>
+    <div id="content">
+            <div id="left" style="width: 40%; float:left">
+                <div class="centered">
+                    <p><strong>Hear yourself in Ukrainian</strong></p>
+                    <img src="kulana.jpg" alt="kulana" width="85%">
+                </div> 
+            </div>
+            <div id="right" float:right">
+                 <div class="centered">
+                       <p style="text-align:justify">The author, artist Kulana Svitlynych, created this platform where one can physically experience the state of inspiration by the Ukrainian language and identity.<br />
+                    <s>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</s><br />
+                    Despite the difficulties, not only thelanguage, but also the cultural heritage has been preserved.</p>
+                    
+                    <p style="text-align:justify">Today, we can feel new about ourselves through Ukrainian poetry.<br />
+                    <s>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</s><br />
+                    Here is a passage from a poem in Ukrainian with explanation and transliteration to help you read it out loud.<br />
+                    <br style="clear:both;"/>
+                </div>   
+                <br style="clear:both;"/>
+            </div>
+            <br style="clear:both;"/>
+        </div>
+    <div style="text-align: center;">
+    <button id="newFactB">Generate another passage</button>
+    <br>  <br>
+    <div style="border: 2px solid black">
+   <p><strong> Passage in Ukrainian</strong>
     <div id="factDisplay"></div>
+    </div>
       <br>  <br>
-<button id="newFactB">Generate another passage</button>
+
 <br>
 
 Please press record and read out this text
+        <br>
+Click PLAY to listen to the way you sound in Ukrainian
+
 <br>
    
     <button id="startRecording">Record</button>
@@ -58,8 +100,6 @@ Please press record and read out this text
 
 <div>
 
-<br>
-Click PLAY to listen to the way you sound in Ukrainian
 
 <br>
 
@@ -67,7 +107,7 @@ Do not stop at one passage, repeat the reading again, may Ukrainian poetry cheri
 <br><br>
 @ kulana.svitlynych @ kulana.svitlynych @ kulana.svitlynych @ kulana.svitlynych 
 
-</div>
+</div></div>
 </body>
 
 
