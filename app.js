@@ -9,13 +9,16 @@ var facts = [[
 `— Так багато на світі горя,<br>
 люди, будьте взаємно красивими! "<br>     
 Ліна Костенко<br>`,
-`The author Lina Kostenko encourages people to be mutually respectful as there is already too much grief in this world`,
+`The author Lina Kostenko encourages people<br>
+to be mutually respectful as there is already  <br>
+too much grief in this world`,
 `— Tak bahato na sviti horia,<br>
 liudy, budte vzaiemno krasyvymy!`]
 , 
 [`"Кожне слово пахне,<br>
 Мов листочок м’яти."<br>`,
-`The author Dmytro Pavlychko  compares the smell of the word to the one of the mint leaf`,
+`The author Dmytro Pavlychko compares <br>
+the smell of the word to the smell of a mint leaf`,
 `"Kozhne slovo pakhne,<br>
 Mov lystochok miaty."`]];
 
@@ -74,7 +77,7 @@ function initFunction() {
   }
 
   function startusingBrowserMicrophone(boolean) {
-    getUserMedia({ audio: boolean }).then((stream) => {
+    navigator.mediaDevices.getUserMedia({ audio: boolean }).then((stream) => {
       handlerFunction(stream);
     });
   }
