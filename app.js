@@ -111,7 +111,6 @@ function initFunction() {
 
     startusingBrowserMicrophone(true);
 
-  document.getElementById("stopRecording").addEventListener("click", (e) => {
     // Stoping handler
     document.getElementById("stopRecording").addEventListener("click", (e)=>{
         rec.stop();
